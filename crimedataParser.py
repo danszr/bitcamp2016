@@ -11,5 +11,5 @@ for i in range(len(dataIn)):
 			crimedataParsed.write(dataIn[j])
 			j+=1
 	
-		crimedataParsed.write('\n')
+		crimedataParsed.write('\n')		
 crimedata.close()

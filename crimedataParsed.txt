@@ -1,14 +1,6 @@
-2016 Arrest Log
+ARREST NUMBER
 
-
-
-
-
-ARREST
-NUMBER
-
-ARRESTED DATE TIME
-CHARGE
+ARRESTED DATE TIME CHARGE
 
 UMPD CASE NUMBER
 
@@ -2799,29 +2791,6 @@ Male
 
 
 (Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se
-
-
-
-
-2015 Arrest Log
-
-
-
-
-
-ARREST
-NUMBER
-
-ARRESTED DATE TIME
-CHARGE
-
-UMPD CASE NUMBER
-
-AGE
-
-RACE
-
-SEX
 
 
 
@@ -12175,29 +12144,6 @@ Male
 
 
 (Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se
-
-
-
-
-2014 Arrest Log
-
-
-
-
-
-ARREST
-NUMBER
-
-ARRESTED DATE TIME
-CHARGE
-
-UMPD CASE NUMBER
-
-AGE
-
-RACE
-
-SEX
 
 
 
@@ -25273,27 +25219,6 @@ Male
 CDS: Possess-Not Marijuana; Dangerous Nonnarcotics
 
 
-
-
-2013 Arrest Log
-
-
-
-
-
-ARREST
-NUMBER
-
-ARRESTED DATE TIME
-CHARGE
-
-UMPD CASE NUMBER
-
-AGE
-
-RACE
-
-SEX
 
 
 
@@ -39762,29 +39687,6 @@ Male
 
 
 (Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se
-
-
-
-
-2012 Arrest Log
-
-
-
-
-
-ARREST
-NUMBER
-
-ARRESTED DATE TIME
-CHARGE
-
-UMPD CASE NUMBER
-
-AGE
-
-RACE
-
-SEX
 
 
 
@@ -55952,29 +55854,6 @@ Female
 
 
 (Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se
-
-
-
-
-2011 Arrest Log
-
-
-
-
-
-ARREST
-NUMBER
-
-ARRESTED DATE TIME
-CHARGE
-
-UMPD CASE NUMBER
-
-AGE
-
-RACE
-
-SEX
 
 
 
