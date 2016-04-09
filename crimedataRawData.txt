@@ -1,6 +1,11 @@
-ARREST NUMBER
 
-ARRESTED DATE TIME CHARGE
+
+
+ARREST
+NUMBER
+
+ARRESTED DATE TIME
+CHARGE
 
 UMPD CASE NUMBER
 
@@ -2791,6 +2796,8 @@ Male
 
 
 (Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se
+
+
 
 
 
@@ -12144,6 +12151,8 @@ Male
 
 
 (Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se
+
+
 
 
 
@@ -25217,7 +25226,6 @@ Male
 
 
 CDS: Possess-Not Marijuana; Dangerous Nonnarcotics
-
 
 
 
@@ -39687,6 +39695,7 @@ Male
 
 
 (Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se
+
 
 
 
@@ -55854,6 +55863,7 @@ Female
 
 
 (Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se
+
 
 
 
@@ -72585,4 +72595,12 @@ Male
 
 
 
-Alcohol Bev/Retail Area Drink: w/o Authorization; Alcohol Beverage/Retail Area Drink Public Disturbance; False Statement to Officer; False Statement to Peace Officer; Resist/Interfere with Arrest 
+Alcohol Bev/Retail Area Drink: w/o Authorization; Alcohol Beverage/Retail Area Drink Public Disturbance; False Statement to Officer; False Statement to Peace Officer; Resist/Interfere with Arrest
+
+
+ 
+ 
+ 
+ 
+ 
+ 

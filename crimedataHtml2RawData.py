@@ -1,6 +1,6 @@
 
-crimedata = open("crimedataHtml.txt")
-crimedataParsed = open("crimedataRawData.txt", 'w')
+crimedataHtml = open("crimedataHtml.txt", 'r')
+crimedataRawData = open("crimedataRawData.txt", 'w')
 
 dataIn = crimedataHtml.read()
 for i in range(len(dataIn)):
