@@ -1,4 +1,4 @@
-[
+var myData = [
   {
     "ARREST NUMBER": 20542,
     "ARRESTED DATE TIME CHARGE": "01/01/16 00:34",
@@ -36963,3 +36963,47 @@
     "DESCRIPTION": "Alcohol Bev/Retail Area Drink: w/o Authorization; Alcohol Beverage/Retail Area Drink Public Disturbance; False Statement to Officer; False Statement to Peace Officer; Resist/Interfere with Arrest"
   }
 ]
+
+
+	var myData;
+    $("#myForm").submit(function(event) {
+		var input = $("#query").val();
+		myData = createData(input);
+		event.preventDefault();
+	});
+	
+	function createData(query) {
+	var monthValues = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+	var myJson = $.getJSON("crimeData.json", function(obj) {
+		myJson = obj.myJson;
+	});
+	//$.getJSON("getjson.json",function(ajaxresult){
+		//$("#SiteName").append(ajaxresult.SiteName);
+		//$("#Tutorial_Name").append(ajaxresult.Tutorial);
+		//$("#Lesson").append(ajaxresult.Lesson);
+	//});
+	//var json = "crimeData.json";
+	//var myJson = JSON.parse("crimeData.json");
+    for(var i = 0; i < myJson.length; i++) {
+			if(myJson[i]["DESCRIPTION"].search(query) >= 0){
+				monthValues[parseInt(myJson[i]["ARRESTED DATE TIME CHARGE"].subStr(0,2))-1]++;
+			}
+    }
+	return monthValues;
+}
+	var data = {
+    labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+    datasets: [
+        {
+            label: "My Second dataset",
+            fillColor: "rgba(151,187,205,0.5)",
+            strokeColor: "rgba(151,187,205,0.8)",
+            highlightFill: "rgba(151,187,205,0.75)",
+            highlightStroke: "rgba(151,187,205,1)",
+            data: myData
+        }
+    ]
+};
+
+		var ctx = document.getElementById("myChart").getContext("2d");
+		var myBarChart = new Chart(ctx).Bar(data);

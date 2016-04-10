@@ -1,10 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Bitcamp!!</title>
+<title>College Park Crime Analyzer</title>
+<meta charset="UTF-8"> 
 </head>
 <body>
-
-
+	<header>
+	<center>
+		<h3>Query:</h3>
+	</center>
+	</header>
+        <div id="content">
+			<center>
+			<form id="myForm">
+				<input id="query" type="text">
+				<input type="submit" value="Submit"></button>
+			</form>
+			</center>
+		</div>
+		<div>
+			<center>
+				<canvas id="myChart" width="400" height="400"></canvas>
+			</center>
+		<div>
 </body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<script>
+	
+	var myData;
+    $("#myForm").submit(function(event) {
+		var input = $("#query").val();
+		myData = createData(input);
+		event.preventDefault();
+	});
+	
+	function createData(query) {
+	var monthValues = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+	var myJson = $.getJSON("crimeData.json", function(obj) {
+		myJson = obj.myJson;
+	});
+	//$.getJSON("getjson.json",function(ajaxresult){
+		//$("#SiteName").append(ajaxresult.SiteName);
+		//$("#Tutorial_Name").append(ajaxresult.Tutorial);
+		//$("#Lesson").append(ajaxresult.Lesson);
+	//});
+	//var json = "crimeData.json";
+	//var myJson = JSON.parse("crimeData.json");
+    for(var i = 0; i < myJson.length; i++) {
+			if(myJson[i]["DESCRIPTION"].search(query) >= 0){
+				monthValues[parseInt(myJson[i]["ARRESTED DATE TIME CHARGE"].subStr(0,2))-1]++;
+			}
+    }
+	return monthValues;
+}
+	var data = {
+    labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+    datasets: [
+        {
+            label: "My Second dataset",
+            fillColor: "rgba(151,187,205,0.5)",
+            strokeColor: "rgba(151,187,205,0.8)",
+            highlightFill: "rgba(151,187,205,0.75)",
+            highlightStroke: "rgba(151,187,205,1)",
+            data: myData
+        }
+    ]
+};
+
+		var ctx = document.getElementById("myChart").getContext("2d");
+		var myBarChart = new Chart(ctx).Bar(data);
+		
+		
+	</script>
 </html>
