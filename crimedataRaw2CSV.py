@@ -47,7 +47,7 @@ for i in range(len(crimedataRawData2Read)):
 		arrestData.append("\"" + crimedataRawData2Read[i+count] + "\"")
 		arrestList.append(arrestData)
 
-finalFile = open("parsedData.txt", 'w')
+finalFile = open("parsedData.csv", 'w')
 for i in arrestList:
 	for j in range(len(i)):
 		if (j < 6):
