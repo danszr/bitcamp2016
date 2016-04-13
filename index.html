@@ -27,22 +27,37 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
 	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 	<script>
-	var myData = {};
-	var parsedData = {};
-	var myBarChart = null;
-	var ctx = null;
+
+	
     $("#myForm").submit(function(event) {
+			var data = {
+		labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+			datasets: [
+				{
+					label: "My Second dataset",
+					fillColor: "rgba(151,187,205,0.5)",
+					strokeColor: "rgba(151,187,205,0.8)",
+					highlightFill: "rgba(151,187,205,0.75)",
+					highlightStroke: "rgba(151,187,205,1)",
+					data: []
+				}
+			]
+	};
+	var ctx = document.getElementById("myChart").getContext("2d");
+	var myBarChart = new Chart(ctx).Bar(data);
+		myBarChart.clear();
+		myBarChart.removeData();
 		var query = $("#query").val();
-		if(myBarChart != null){
-			 myBarChart.removeData();
+		loadJSON("crimeData.json", createData, query, data);
+		
+		for(var i = 0; i < data.labels.length; i++){
+			myBarChart.addData(data[datasets][data][i], data[labels][i]);
 		}
-		loadJSON("crimeData.json", createData, query, myBarChart, ctx);
-		if(myBarChart != null){
-			myBarChart.update();
-		}
+				
+		myBarChart.update();
 		event.preventDefault();
 	});
-	function createData(jsonData, query, myBarChart, ctx) {
+	function createData(jsonData, query, data) {
 		jsonData = JSON.parse(jsonData);
 		var monthValues = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 		for(var i = 0; i < jsonData.length; i++) {
@@ -50,30 +65,28 @@
 					monthValues[parseInt(jsonData[i]["ARRESTED DATE TIME CHARGE"].substring(0,2))-1]++;
 				}
 		}
-		var data = {
+		data = {
 		labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-		datasets: [
-        {
-            label: "My Second dataset",
-            fillColor: "rgba(151,187,205,0.5)",
-            strokeColor: "rgba(151,187,205,0.8)",
-            highlightFill: "rgba(151,187,205,0.75)",
-            highlightStroke: "rgba(151,187,205,1)",
-            data: monthValues
-        }
-    ]
-};
-
-		ctx = document.getElementById("myChart").getContext("2d");
-		myBarChart = new Chart(ctx).Bar(data);
+			datasets: [
+				{
+					label: "My Second dataset",
+					fillColor: "rgba(151,187,205,0.5)",
+					strokeColor: "rgba(151,187,205,0.8)",
+					highlightFill: "rgba(151,187,205,0.75)",
+					highlightStroke: "rgba(151,187,205,1)",
+					data: monthValues
+				}
+			]
+		};    
 	}
-	function loadJSON(file, callback, query, myBarChart, ctx){
+
+	function loadJSON(file, callback, query, data){
 		var jsonRequest = new XMLHttpRequest();
 		jsonRequest.overrideMimeType("application/json");
 		jsonRequest.open('GET', file, true);
 		jsonRequest.onreadystatechange = function(){
 			if(jsonRequest.readyState == 4 && jsonRequest.status == "200"){
-				callback(jsonRequest.responseText, query, myBarChart, ctx);
+				callback(jsonRequest.responseText, query, data);
 			}
 		};
 		jsonRequest.send(null);
