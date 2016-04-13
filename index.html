@@ -20,77 +20,16 @@
 		</div>
 		<div>
 			<center>
-				<canvas id="myChart" width="400" height="400"></canvas>
+				<canvas id="myChartMonths" width="400" height="400"></canvas>
+				<canvas id="myChartHours" width="400" height="400"></canvas>
 			</center>
 		<div>
 </body>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
 	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-	<script>
-	var defaultData = {
-	labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-		datasets: [
-			{
-				label: "My Second dataset",
-				fillColor: "rgba(151,187,205,0.5)",
-				strokeColor: "rgba(151,187,205,0.8)",
-				highlightFill: "rgba(151,187,205,0.75)",
-				highlightStroke: "rgba(151,187,205,1)",
-				data: [0,0,0,0,0,0,0,0,0,0,0,0]
-			}
-		]
-	};
-	var jsonData = null;
-	var ctx = document.getElementById("myChart").getContext("2d");
-	var myBarChart = new Chart(ctx).Bar(defaultData);
-	
-	loadJSON("crimeData.json", function(response){
-			jsonData = JSON.parse(response);
-		});
-    $("#myForm").submit(function(event) {
-		var query = $("#query").val();
-		createData(query);
-		event.preventDefault();
-	});
-
-	function createData(query) {
-		var monthValues = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-		for(var i = 0; i < jsonData.length; i++) {
-				if((jsonData[i]["DESCRIPTION"]).toString().toLowerCase().includes(query.toLowerCase())){
-					monthValues[parseInt(jsonData[i]["ARRESTED DATE TIME CHARGE"].substring(0,2))-1]++;
-				}
-		}
-		var data = {
-		labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-			datasets: [
-				{
-					label: "My Second dataset",
-					fillColor: "rgba(151,187,205,0.5)",
-					strokeColor: "rgba(151,187,205,0.8)",
-					highlightFill: "rgba(151,187,205,0.75)",
-					highlightStroke: "rgba(151,187,205,1)",
-					data: monthValues
-				}
-			]
-		};
-		for(var i = 0; i < 12; i++){
-			myBarChart.datasets[0].bars[i].value = monthValues[i];
-		}
-		myBarChart.update();
-	}
-	function loadJSON(file, callback){
-		var jsonRequest = new XMLHttpRequest();
-		jsonRequest.overrideMimeType("application/json");
-		jsonRequest.open('GET', file, true);
-		jsonRequest.onreadystatechange = function(){
-			if(jsonRequest.readyState == 4 && jsonRequest.status == "200"){
-				callback(jsonRequest.responseText);
-			}
-		};
-		jsonRequest.send(null);
-	}
-	
-		
-		
+	<script src="graph.js"></script>
+	<script>	
+		graphMonths();
+		graphHours(); 
 	</script>
 </html>
