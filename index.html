@@ -27,49 +27,58 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
 	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
 	<script>
-	
-	var myData;
+	var myData = {};
+	var parsedData = {};
+	var myBarChart = null;
+	var ctx = null;
     $("#myForm").submit(function(event) {
-		var input = $("#query").val();
-		myData = createData(input);
+		var query = $("#query").val();
+		if(myBarChart != null){
+			 myBarChart.removeData();
+		}
+		loadJSON("crimeData.json", createData, query, myBarChart, ctx);
+		if(myBarChart != null){
+			myBarChart.update();
+		}
 		event.preventDefault();
 	});
-	
-	function createData(query) {
-	var monthValues = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-	var myJson = $.getJSON("crimeData.json", function(obj) {
-		myJson = obj.myJson;
-	});
-	//$.getJSON("getjson.json",function(ajaxresult){
-		//$("#SiteName").append(ajaxresult.SiteName);
-		//$("#Tutorial_Name").append(ajaxresult.Tutorial);
-		//$("#Lesson").append(ajaxresult.Lesson);
-	//});
-	//var json = "crimeData.json";
-	//var myJson = JSON.parse("crimeData.json");
-    for(var i = 0; i < myJson.length; i++) {
-			if(myJson[i]["DESCRIPTION"].search(query) >= 0){
-				monthValues[parseInt(myJson[i]["ARRESTED DATE TIME CHARGE"].subStr(0,2))-1]++;
-			}
-    }
-	return monthValues;
-}
-	var data = {
-    labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-    datasets: [
+	function createData(jsonData, query, myBarChart, ctx) {
+		jsonData = JSON.parse(jsonData);
+		var monthValues = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+		for(var i = 0; i < jsonData.length; i++) {
+				if((jsonData[i]["DESCRIPTION"]).toString().toLowerCase().includes(query.toLowerCase())){
+					monthValues[parseInt(jsonData[i]["ARRESTED DATE TIME CHARGE"].substring(0,2))-1]++;
+				}
+		}
+		var data = {
+		labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+		datasets: [
         {
             label: "My Second dataset",
             fillColor: "rgba(151,187,205,0.5)",
             strokeColor: "rgba(151,187,205,0.8)",
             highlightFill: "rgba(151,187,205,0.75)",
             highlightStroke: "rgba(151,187,205,1)",
-            data: myData
+            data: monthValues
         }
     ]
 };
 
-		var ctx = document.getElementById("myChart").getContext("2d");
-		var myBarChart = new Chart(ctx).Bar(data);
+		ctx = document.getElementById("myChart").getContext("2d");
+		myBarChart = new Chart(ctx).Bar(data);
+	}
+	function loadJSON(file, callback, query, myBarChart, ctx){
+		var jsonRequest = new XMLHttpRequest();
+		jsonRequest.overrideMimeType("application/json");
+		jsonRequest.open('GET', file, true);
+		jsonRequest.onreadystatechange = function(){
+			if(jsonRequest.readyState == 4 && jsonRequest.status == "200"){
+				callback(jsonRequest.responseText, query, myBarChart, ctx);
+			}
+		};
+		jsonRequest.send(null);
+	}
+	
 		
 		
 	</script>
