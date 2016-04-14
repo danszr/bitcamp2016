@@ -1,6 +1,11 @@
-ARREST NUMBER
 
-ARRESTED DATE TIME CHARGE
+
+
+ARREST
+NUMBER
+
+ARRESTED DATE TIME
+CHARGE
 
 UMPD CASE NUMBER
 
@@ -2353,7 +2358,9 @@ Disorderly Conduct; Malicious Destruction Property/Value + $500
 2016-00014766
 
 
+Asian/Pacific Islander
 
+Male
 
 
 
@@ -2421,7 +2428,9 @@ CDS:Possession Marijuana L/T 10 grams
 2016-00014766
 
 
+Asian/Pacific Islander
 
+Male
 
 
 
@@ -2738,7 +2747,7 @@ Male
 
 
 
-(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol
+(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; CDS: Possess-Not Marijuana; Opium or cocaine and derivatives); CDS: Possession of Marijuana
 
 
 
@@ -2794,6 +2803,217 @@ Male
 
 
 
+20710
+
+04/09/16 22:16
+
+2016-00020483
+
+
+White
+
+Female
+
+
+
+CDS: Possess-Not Marijuana; Opium or cocaine and derivatives)
+
+
+
+20711
+
+04/09/16 22:16
+
+2016-00020483
+
+
+White
+
+Male
+
+
+
+CDS:Possession Marijuana L/T 10 grams
+
+
+
+20712
+
+04/10/16 00:42
+
+2016-00020516
+
+
+White
+
+Male
+
+
+
+School Trespassing/.Refusing to leave building
+
+
+
+20713
+
+04/10/16 01:11
+
+2016-00020531
+
+
+White
+
+Female
+
+
+
+Assault-2nd Degree; Simple Assault
+
+
+
+20714
+
+04/10/16 23:20
+
+2016-00020682
+
+
+Black
+
+Male
+
+
+
+CDS:Possession Marijuana L/T 10 grams
+
+
+
+20715
+
+04/12/16 01:56
+
+2016-00020986
+
+22
+
+Black
+
+Male
+
+
+
+CDS:Possession Marijuana L/T 10 grams
+
+
+
+20717
+
+04/12/16 08:50
+
+2016-00012651
+
+21
+
+Asian/Pacific Islander
+
+Male
+
+
+
+Burglary 2nd Degree; Unlawful Entry
+
+
+
+20718
+
+04/12/16 08:50
+
+2016-00019506
+
+21
+
+Asian/Pacific Islander
+
+Male
+
+
+
+Burglary 2nd Degree; Unlawful Entry
+
+
+
+20717
+
+04/12/16 08:50
+
+2016-00012651
+
+21
+
+Asian/Pacific Islander
+
+Male
+
+
+
+Burglary 4th Degree Theft; Unlawful Entry
+
+
+
+20718
+
+04/12/16 08:50
+
+2016-00019506
+
+21
+
+Asian/Pacific Islander
+
+Male
+
+
+
+Burglary 4th Degree Theft; Unlawful Entry
+
+
+
+20717
+
+04/12/16 08:50
+
+2016-00012651
+
+21
+
+Asian/Pacific Islander
+
+Male
+
+
+
+Theft: $1,000 to Under $10,000
+
+
+
+20719
+
+04/14/16 00:38
+
+2016-00021436
+
+21
+
+Black
+
+Female
+
+
+
+(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se
+
+
+ 
 
 
 19959

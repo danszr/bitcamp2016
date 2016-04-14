@@ -1102,8 +1102,8 @@
     "ARRESTED DATE TIME CHARGE": "03/23/16 08:30",
     "UMPD CASE NUMBER": "2016-00014766",
     "AGE": "",
-    "RACE": "",
-    "SEX": "",
+    "RACE": "Asian/Pacific Islander",
+    "SEX": "Male",
     "DESCRIPTION": "Burglary 4th Degree; Unlawful Entry"
   },
   {
@@ -1138,8 +1138,8 @@
     "ARRESTED DATE TIME CHARGE": "03/24/16 22:30",
     "UMPD CASE NUMBER": "2016-00014766",
     "AGE": "",
-    "RACE": "",
-    "SEX": "",
+    "RACE": "Asian/Pacific Islander",
+    "SEX": "Male",
     "DESCRIPTION": "Burglary 4th Degree; Unlawful Entry"
   },
   {
@@ -1302,7 +1302,7 @@
     "AGE": "",
     "RACE": "Asian/Pacific Islander",
     "SEX": "Male",
-    "DESCRIPTION": "(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol"
+    "DESCRIPTION": "(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; CDS: Possess-Not Marijuana; Opium or cocaine and derivatives); CDS: Possession of Marijuana"
   },
   {
     "ARREST NUMBER": 20707,
@@ -1329,6 +1329,114 @@
     "AGE": "",
     "RACE": "",
     "SEX": "Male",
+    "DESCRIPTION": "(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se"
+  },
+  {
+    "ARREST NUMBER": 20710,
+    "ARRESTED DATE TIME CHARGE": "04/09/16 22:16",
+    "UMPD CASE NUMBER": "2016-00020483",
+    "AGE": "",
+    "RACE": "White",
+    "SEX": "Female",
+    "DESCRIPTION": "CDS: Possess-Not Marijuana; Opium or cocaine and derivatives)"
+  },
+  {
+    "ARREST NUMBER": 20711,
+    "ARRESTED DATE TIME CHARGE": "04/09/16 22:16",
+    "UMPD CASE NUMBER": "2016-00020483",
+    "AGE": "",
+    "RACE": "White",
+    "SEX": "Male",
+    "DESCRIPTION": "CDS:Possession Marijuana L/T 10 grams"
+  },
+  {
+    "ARREST NUMBER": 20712,
+    "ARRESTED DATE TIME CHARGE": "04/10/16 00:42",
+    "UMPD CASE NUMBER": "2016-00020516",
+    "AGE": "",
+    "RACE": "White",
+    "SEX": "Male",
+    "DESCRIPTION": "School Trespassing/.Refusing to leave building"
+  },
+  {
+    "ARREST NUMBER": 20713,
+    "ARRESTED DATE TIME CHARGE": "04/10/16 01:11",
+    "UMPD CASE NUMBER": "2016-00020531",
+    "AGE": "",
+    "RACE": "White",
+    "SEX": "Female",
+    "DESCRIPTION": "Assault-2nd Degree; Simple Assault"
+  },
+  {
+    "ARREST NUMBER": 20714,
+    "ARRESTED DATE TIME CHARGE": "04/10/16 23:20",
+    "UMPD CASE NUMBER": "2016-00020682",
+    "AGE": "",
+    "RACE": "Black",
+    "SEX": "Male",
+    "DESCRIPTION": "CDS:Possession Marijuana L/T 10 grams"
+  },
+  {
+    "ARREST NUMBER": 20715,
+    "ARRESTED DATE TIME CHARGE": "04/12/16 01:56",
+    "UMPD CASE NUMBER": "2016-00020986",
+    "AGE": 22,
+    "RACE": "Black",
+    "SEX": "Male",
+    "DESCRIPTION": "CDS:Possession Marijuana L/T 10 grams"
+  },
+  {
+    "ARREST NUMBER": 20717,
+    "ARRESTED DATE TIME CHARGE": "04/12/16 08:50",
+    "UMPD CASE NUMBER": "2016-00012651",
+    "AGE": 21,
+    "RACE": "Asian/Pacific Islander",
+    "SEX": "Male",
+    "DESCRIPTION": "Burglary 2nd Degree; Unlawful Entry"
+  },
+  {
+    "ARREST NUMBER": 20718,
+    "ARRESTED DATE TIME CHARGE": "04/12/16 08:50",
+    "UMPD CASE NUMBER": "2016-00019506",
+    "AGE": 21,
+    "RACE": "Asian/Pacific Islander",
+    "SEX": "Male",
+    "DESCRIPTION": "Burglary 2nd Degree; Unlawful Entry"
+  },
+  {
+    "ARREST NUMBER": 20717,
+    "ARRESTED DATE TIME CHARGE": "04/12/16 08:50",
+    "UMPD CASE NUMBER": "2016-00012651",
+    "AGE": 21,
+    "RACE": "Asian/Pacific Islander",
+    "SEX": "Male",
+    "DESCRIPTION": "Burglary 4th Degree Theft; Unlawful Entry"
+  },
+  {
+    "ARREST NUMBER": 20718,
+    "ARRESTED DATE TIME CHARGE": "04/12/16 08:50",
+    "UMPD CASE NUMBER": "2016-00019506",
+    "AGE": 21,
+    "RACE": "Asian/Pacific Islander",
+    "SEX": "Male",
+    "DESCRIPTION": "Burglary 4th Degree Theft; Unlawful Entry"
+  },
+  {
+    "ARREST NUMBER": 20717,
+    "ARRESTED DATE TIME CHARGE": "04/12/16 08:50",
+    "UMPD CASE NUMBER": "2016-00012651",
+    "AGE": 21,
+    "RACE": "Asian/Pacific Islander",
+    "SEX": "Male",
+    "DESCRIPTION": "Theft: $1,000 to Under $10,000"
+  },
+  {
+    "ARREST NUMBER": 20719,
+    "ARRESTED DATE TIME CHARGE": "04/14/16 00:38",
+    "UMPD CASE NUMBER": "2016-00021436",
+    "AGE": 21,
+    "RACE": "Black",
+    "SEX": "Female",
     "DESCRIPTION": "(Driving, Attempting to drive) veh. while impaired by alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol; (Driving, Attempting to drive) veh. while under the influence of alcohol per se"
   },
   {
