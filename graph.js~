@@ -13,7 +13,7 @@
 			]
 		};
 		var jsonData = null;
-		var ctx = document.getElementById("myChartMonths").getContext("2d");
+		var ctx = contentWindow.document.getElementById("myChartMonths").getContext("2d");
 		var myBarChart = new Chart(ctx).Bar(defaultData);
 		
 		loadJSON("https://terpconnect.umd.edu/~armank/Projects/crimeData.json", function(response){
@@ -80,7 +80,7 @@
 			]
 		};
 		var jsonData = null;
-		var ctx = document.getElementById("myChartHours").getContext("2d");
+		var ctx = contentWindow.document.getElementById("myChartHours").getContext("2d");
 		var myBarChart = new Chart(ctx).Bar(defaultData);
 		
 		loadJSON("https://terpconnect.umd.edu/~armank/Projects/crimeData.json", function(response){
