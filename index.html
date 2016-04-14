@@ -3,6 +3,15 @@
 <head>
 <title>College Park Crime Analyzer</title>
 <meta charset="UTF-8"> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<script src="graph.js"></script>
+	<script>	
+		graphMonths();
+		graphHours();
+		graphDays();
+		writeLatest();
+	</script>
 </head>
 <body>
 	<header>
@@ -14,7 +23,7 @@
 			<center>
 			<form id="myForm">
 				<input id="query" type="text">
-				<input type="submit" value="Submit"></button>
+				<input type="submit" value="Submit">
 			</form>
 			</center>
 		</div>
@@ -34,13 +43,5 @@
 			</center>
 		</div>
 </body>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
-	<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-	<script src="graph.js"></script>
-	<script>	
-		graphMonths();
-		graphHours();
-		graphDays();
-		writeLatest();
-	</script>
+	
 </html>
