@@ -16,7 +16,7 @@
 		var ctx = document.getElementById("myChartMonths").getContext("2d");
 		var myBarChart = new Chart(ctx).Bar(defaultData);
 		
-		loadJSON("https://terpconnect.umd.edu/~armank/Projects/crimeData.json", function(response){
+		loadJSON("https://terpconnect.umd.edu/~armank/Projects/UMD_Bitcamp2016_Project/crimeData.json", function(response){
 				jsonData = JSON.parse(response);
 			});
 		$("#myForm").submit(function(event) {
@@ -83,7 +83,7 @@
 		var ctx = document.getElementById("myChartHours").getContext("2d");
 		var myBarChart = new Chart(ctx).Bar(defaultData);
 		
-		loadJSON("https://terpconnect.umd.edu/~armank/Projects/crimeData.json", function(response){
+		loadJSON("https://terpconnect.umd.edu/~armank/Projects/UMD_Bitcamp2016_Project/crimeData.json", function(response){
 				jsonData = JSON.parse(response);
 			});
 		$("#myForm").submit(function(event) {
@@ -149,7 +149,7 @@
 		var ctx = document.getElementById("myChartDays").getContext("2d");
 		var myBarChart = new Chart(ctx).Bar(defaultData);
 		
-		loadJSON("https://terpconnect.umd.edu/~armank/Projects/crimeData.json", function(response){
+		loadJSON("https://terpconnect.umd.edu/~armank/Projects/UMD_Bitcamp2016_Project/crimeData.json", function(response){
 				jsonData = JSON.parse(response);
 			});
 		$("#myForm").submit(function(event) {
@@ -207,7 +207,7 @@
 	function writeLatest(){
 		var jsonData = null;
 		
-		loadJSON("https://terpconnect.umd.edu/~armank/Projects/crimeData.json", function(response){
+		loadJSON("https://terpconnect.umd.edu/~armank/Projects/UMD_Bitcamp2016_Project/crimeData.json", function(response){
 				jsonData = JSON.parse(response);
 			});
 		$("#myForm").submit(function(event) {
@@ -252,6 +252,154 @@
 			'Description: ' + jsonData[latestArrestIndex]['DESCRIPTION'] + '</p>');
 		}
 			
+		function loadJSON(file, callback){
+			var jsonRequest = new XMLHttpRequest();
+			jsonRequest.overrideMimeType("application/json");
+			jsonRequest.open('GET', file, true);
+			jsonRequest.onreadystatechange = function(){
+				if(jsonRequest.readyState == 4 && jsonRequest.status == "200"){
+					callback(jsonRequest.responseText);
+				}
+			};
+			jsonRequest.send(null);
+		}
+	}
+	function graphRaces(){
+		var defaultData = {
+		labels: ["White", "Black", "American Indian/Alaskan", "Asian/Pacific Islander", "Not Reported"],
+			datasets: [
+				{
+					label: "My Second dataset",
+					fillColor: "rgba(151,187,205,0.5)",
+					strokeColor: "rgba(151,187,205,0.8)",
+					highlightFill: "rgba(151,187,205,0.75)",
+					highlightStroke: "rgba(151,187,205,1)",
+					data: [0,0,0,0,0]
+				}
+			]
+		};
+		var jsonData = null;
+		var ctx = document.getElementById("myChartRaces").getContext("2d");
+		var myBarChart = new Chart(ctx).Bar(defaultData);
+		
+		loadJSON("https://terpconnect.umd.edu/~armank/Projects/UMD_Bitcamp2016_Project/crimeData.json", function(response){
+				jsonData = JSON.parse(response);
+			});
+		$("#myForm").submit(function(event) {
+			var query = $("#query").val();
+			createData(query);
+			$("#raceText").remove();
+			$("#races").prepend('<p id="raceText">Arrests involving ' + query +' graphed by race</p>');
+			event.preventDefault();
+		});
+
+		function createData(query) {
+			var raceValues = [0, 0, 0, 0, 0];
+			for(var i = 0; i < jsonData.length; i++) {
+					if((jsonData[i]["DESCRIPTION"]).toString().toLowerCase().includes(query.toLowerCase())){
+						if (jsonData[i]["RACE"].includes("White")){
+							raceValues[0]++;
+						}else if (jsonData[i]["RACE"].includes("Black")){
+							raceValues[1]++;
+						}else if (jsonData[i]["RACE"].includes("American Indian/Alaskan")){
+							raceValues[2]++;
+						}else if (jsonData[i]["RACE"].includes("Asian/Pacific Islander")){
+							raceValues[3]++;
+						}else if (jsonData[i]["RACE"].includes("")){
+							raceValues[4]++;
+						}
+					}
+			}
+			var data = {
+			labels: ["White", "Black", "American Indian/Alaskan", "Asian/Pacific Islander", "Not Reported"],
+				datasets: [
+					{
+						label: "My Second dataset",
+						fillColor: "rgba(151,187,205,0.5)",
+						strokeColor: "rgba(151,187,205,0.8)",
+						highlightFill: "rgba(151,187,205,0.75)",
+						highlightStroke: "rgba(151,187,205,1)",
+						data: raceValues
+					}
+				]
+			};
+			for(var i = 0; i < 5; i++){
+				myBarChart.datasets[0].bars[i].value = raceValues[i];
+			}
+			myBarChart.update();
+		}
+		function loadJSON(file, callback){
+			var jsonRequest = new XMLHttpRequest();
+			jsonRequest.overrideMimeType("application/json");
+			jsonRequest.open('GET', file, true);
+			jsonRequest.onreadystatechange = function(){
+				if(jsonRequest.readyState == 4 && jsonRequest.status == "200"){
+					callback(jsonRequest.responseText);
+				}
+			};
+			jsonRequest.send(null);
+		}
+	}
+	function graphGenders(){
+		var defaultData = {
+		labels: ["Male", "Female", "Not Reported"],
+			datasets: [
+				{
+					label: "My Second dataset",
+					fillColor: "rgba(151,187,205,0.5)",
+					strokeColor: "rgba(151,187,205,0.8)",
+					highlightFill: "rgba(151,187,205,0.75)",
+					highlightStroke: "rgba(151,187,205,1)",
+					data: [0,0,0]
+				}
+			]
+		};
+		var jsonData = null;
+		var ctx = document.getElementById("myChartGenders").getContext("2d");
+		var myBarChart = new Chart(ctx).Bar(defaultData);
+		
+		loadJSON("https://terpconnect.umd.edu/~armank/Projects/UMD_Bitcamp2016_Project/crimeData.json", function(response){
+				jsonData = JSON.parse(response);
+			});
+		$("#myForm").submit(function(event) {
+			var query = $("#query").val();
+			createData(query);
+			$("#genderText").remove();
+			$("#genders").prepend('<p id="genderText">Arrests involving ' + query +' graphed by gender</p>');
+			event.preventDefault();
+		});
+
+		function createData(query) {
+			var genderValues = [0, 0, 0];
+			for(var i = 0; i < jsonData.length; i++) {
+					if((jsonData[i]["DESCRIPTION"]).toString().toLowerCase().includes(query.toLowerCase())){
+						if (jsonData[i]["SEX"].includes("Male")){
+							genderValues[0]++;
+						}else if (jsonData[i]["SEX"].includes("Female")){
+							genderValues[1]++;
+						}else if (jsonData[i]["SEX"].includes("")){
+							genderValues[2]++;
+						}
+					}
+			}
+			var data = {
+			labels: ["Male", "Female", "Not Reported"],
+				datasets: [
+					{
+						label: "My Second dataset",
+						fillColor: "rgba(151,187,205,0.5)",
+						strokeColor: "rgba(151,187,205,0.8)",
+						highlightFill: "rgba(151,187,205,0.75)",
+						highlightStroke: "rgba(151,187,205,1)",
+						data: genderValues
+					}
+				]
+			};
+			for(var i = 0; i < 3; i++){
+				myBarChart.datasets[0].bars[i].value = genderValues[i];
+			}
+			myBarChart.update();
+		}
 		function loadJSON(file, callback){
 			var jsonRequest = new XMLHttpRequest();
 			jsonRequest.overrideMimeType("application/json");

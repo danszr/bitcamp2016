@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>College Park Crime Analyzer</title>
+<title>College Park Arrest Analyzer</title>
 <meta charset="UTF-8"> 
 </head>
 <body>
 	<header>
 	<center>
-		<h3>Query:</h3>
+		<h3>Arrest Query:</h3>
 	</center>
 	</header>
         <div id="content">
@@ -29,6 +29,12 @@
 				<div id="days">
 					<canvas id="myChartDays" width="400" height="400"></canvas>
 				</div>
+				<div id="races">
+					<canvas id="myChartRaces" width="400" height="400"></canvas>
+				</div>
+				<div id="genders">
+					<canvas id="myChartGenders" width="400" height="400"></canvas>
+				</div>
 				<div id="latest">
 				</div>
 			</center>
@@ -40,6 +46,8 @@
 		    graphMonths();
 		    graphHours();
 		    graphDays();
+			graphRaces();
+			graphGenders();
 		    writeLatest();
 	    </script>
 </body>

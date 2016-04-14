@@ -31,7 +31,8 @@ for i in range(len(crimedataRawData2Read)):
 			count+=1
 		else:
 			arrestData.append("\n")
-		if(crimedataRawData2Read[i+count].count(" ") <=1 and not(crimedataRawData2Read[i+count].isdigit()) and crimedataRawData2Read[i+count].count("ale\n") == 0):
+		if(crimedataRawData2Read[i+count].count(" ") <=1 and not(crimedataRawData2Read[i+count].isdigit()) and 
+		(not(crimedataRawData2Read[i+count].find("Black")==-1) or not(crimedataRawData2Read[i+count].find("White")==-1) or not(crimedataRawData2Read[i+count].find("Asian") ==-1) or not(crimedataRawData2Read[i+count].find("Alaskan") ==-1))):
 			#race check
 			arrestData.append(crimedataRawData2Read[i+count])
 			count+=1

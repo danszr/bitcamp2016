@@ -1705,9 +1705,9 @@
     "ARRESTED DATE TIME CHARGE": "01/25/15 01:12",
     "UMPD CASE NUMBER": "2015-00003624",
     "AGE": "",
-    "RACE": "Disorderly Conduct",
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": 19995
+    "DESCRIPTION": "Disorderly Conduct"
   },
   {
     "ARREST NUMBER": 19995,
@@ -8959,9 +8959,9 @@
     "ARRESTED DATE TIME CHARGE": "05/22/14 04:59",
     "UMPD CASE NUMBER": "2014-00020148",
     "AGE": "",
-    "RACE": "Indecent Exposure",
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": 19487
+    "DESCRIPTION": "Indecent Exposure"
   },
   {
     "ARREST NUMBER": 19487,
@@ -11299,9 +11299,9 @@
     "ARRESTED DATE TIME CHARGE": "10/10/14 00:21",
     "UMPD CASE NUMBER": "2014-00041500",
     "AGE": 19,
-    "RACE": "Trespass-Posted Property",
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": 19757
+    "DESCRIPTION": "Trespass-Posted Property"
   },
   {
     "ARREST NUMBER": 19757,
@@ -11398,9 +11398,9 @@
     "ARRESTED DATE TIME CHARGE": "10/11/14 04:49",
     "UMPD CASE NUMBER": "2014-00041689",
     "AGE": 20,
-    "RACE": "Trespass-Posted Property",
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": 19770
+    "DESCRIPTION": "Trespass-Posted Property"
   },
   {
     "ARREST NUMBER": 19770,
@@ -11587,9 +11587,9 @@
     "ARRESTED DATE TIME CHARGE": "10/17/14 01:39",
     "UMPD CASE NUMBER": "2014-00042457",
     "AGE": 18,
-    "RACE": "Disorderly Conduct",
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": 19792
+    "DESCRIPTION": "Disorderly Conduct"
   },
   {
     "ARREST NUMBER": 19792,
@@ -14161,9 +14161,9 @@
     "ARRESTED DATE TIME CHARGE": "02/25/13 07:28",
     "UMPD CASE NUMBER": "2013-00011009",
     "AGE": "",
-    "RACE": "Indecent Exposure",
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": 18751
+    "DESCRIPTION": "Indecent Exposure"
   },
   {
     "ARREST NUMBER": 18751,
@@ -15538,9 +15538,9 @@
     "ARRESTED DATE TIME CHARGE": "05/03/13 23:30",
     "UMPD CASE NUMBER": "2013-00023775",
     "AGE": 20,
-    "RACE": "Trespass-Posted Property",
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": 18559
+    "DESCRIPTION": "Trespass-Posted Property"
   },
   {
     "ARREST NUMBER": 18559,
@@ -17014,9 +17014,9 @@
     "ARRESTED DATE TIME CHARGE": "07/27/13 04:51",
     "UMPD CASE NUMBER": "2013-00036735",
     "AGE": 20,
-    "RACE": "Disorderly Conduct",
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": 706
+    "DESCRIPTION": "Disorderly Conduct"
   },
   {
     "ARREST NUMBER": 18744,
@@ -18607,18 +18607,18 @@
     "ARRESTED DATE TIME CHARGE": "10/06/13 02:58",
     "UMPD CASE NUMBER": "2013-00047422",
     "AGE": "",
-    "RACE": "Trespass-Posted Property",
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": 18945
+    "DESCRIPTION": "Trespass-Posted Property"
   },
   {
     "ARREST NUMBER": 18945,
     "ARRESTED DATE TIME CHARGE": "10/06/13 02:58",
     "UMPD CASE NUMBER": "2013-00047422",
     "AGE": "",
-    "RACE": "Trespass-Posted Property",
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": 18947
+    "DESCRIPTION": "Trespass-Posted Property"
   },
   {
     "ARREST NUMBER": 18947,
@@ -20146,9 +20146,9 @@
     "ARRESTED DATE TIME CHARGE": "12/21/13 03:25",
     "UMPD CASE NUMBER": "2013-00058209",
     "AGE": 20,
-    "RACE": "Trespass-Posted Property",
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": 19134
+    "DESCRIPTION": "Trespass-Posted Property"
   },
   {
     "ARREST NUMBER": 19134,
@@ -21307,9 +21307,9 @@
     "ARRESTED DATE TIME CHARGE": "02/15/12 01:50",
     "UMPD CASE NUMBER": "2012-00009415",
     "AGE": 21,
-    "RACE": "Disorderly Conduct",
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": 17340
+    "DESCRIPTION": "Disorderly Conduct"
   },
   {
     "ARREST NUMBER": 17340,
@@ -21892,9 +21892,9 @@
     "ARRESTED DATE TIME CHARGE": "03/09/12 02:00",
     "UMPD CASE NUMBER": "2012-00013772",
     "AGE": 21,
-    "RACE": "Disorderly Conduct",
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": 17409
+    "DESCRIPTION": "Disorderly Conduct"
   },
   {
     "ARREST NUMBER": 17409,
@@ -22738,9 +22738,9 @@
     "ARRESTED DATE TIME CHARGE": "04/13/12 01:22",
     "UMPD CASE NUMBER": "2012-00021159",
     "AGE": "",
-    "RACE": 17512,
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": "04/13/12 19:05"
+    "DESCRIPTION": 17512
   },
   {
     "ARREST NUMBER": 17512,
@@ -23071,9 +23071,9 @@
     "ARRESTED DATE TIME CHARGE": "04/21/12 00:49",
     "UMPD CASE NUMBER": "2012-00022800",
     "AGE": "",
-    "RACE": 17553,
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": "04/21/12 00:49"
+    "DESCRIPTION": 17553
   },
   {
     "ARREST NUMBER": 17553,
@@ -23773,9 +23773,9 @@
     "ARRESTED DATE TIME CHARGE": "05/18/12 00:44",
     "UMPD CASE NUMBER": "2012-00027566",
     "AGE": 19,
-    "RACE": "Disorderly Conduct",
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": 17637
+    "DESCRIPTION": "Disorderly Conduct"
   },
   {
     "ARREST NUMBER": 17637,
@@ -23989,9 +23989,9 @@
     "ARRESTED DATE TIME CHARGE": "06/02/12 04:04",
     "UMPD CASE NUMBER": "2012-00030052",
     "AGE": 21,
-    "RACE": "Disorderly Conduct",
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": 17666
+    "DESCRIPTION": "Disorderly Conduct"
   },
   {
     "ARREST NUMBER": 17666,
@@ -24916,9 +24916,9 @@
     "ARRESTED DATE TIME CHARGE": "07/14/12 01:24",
     "UMPD CASE NUMBER": "2012-00036941",
     "AGE": 20,
-    "RACE": "Disorderly Conduct",
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": 17772
+    "DESCRIPTION": "Disorderly Conduct"
   },
   {
     "ARREST NUMBER": 17772,
@@ -25384,18 +25384,18 @@
     "ARRESTED DATE TIME CHARGE": "08/08/12 00:16",
     "UMPD CASE NUMBER": "2012-00042666",
     "AGE": 19,
-    "RACE": "Trespass-Posted Property",
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": 17837
+    "DESCRIPTION": "Trespass-Posted Property"
   },
   {
     "ARREST NUMBER": 17837,
     "ARRESTED DATE TIME CHARGE": "08/08/12 00:30",
     "UMPD CASE NUMBER": "2012-00042666",
     "AGE": 22,
-    "RACE": "Trespass-Posted Property",
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": 17838
+    "DESCRIPTION": "Trespass-Posted Property"
   },
   {
     "ARREST NUMBER": 17838,
@@ -25897,9 +25897,9 @@
     "ARRESTED DATE TIME CHARGE": "08/31/12 01:31",
     "UMPD CASE NUMBER": "2012-00046897",
     "AGE": "",
-    "RACE": "Disorderly Conduct",
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": 17895
+    "DESCRIPTION": "Disorderly Conduct"
   },
   {
     "ARREST NUMBER": 17895,
@@ -26995,9 +26995,9 @@
     "ARRESTED DATE TIME CHARGE": "10/20/12 01:45",
     "UMPD CASE NUMBER": "2012-00056419",
     "AGE": 21,
-    "RACE": "Disorderly Conduct",
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": 18046
+    "DESCRIPTION": "Disorderly Conduct"
   },
   {
     "ARREST NUMBER": 18046,
@@ -29488,9 +29488,9 @@
     "ARRESTED DATE TIME CHARGE": "02/11/11 20:35",
     "UMPD CASE NUMBER": "2011-00009358",
     "AGE": "",
-    "RACE": "Disorderly Conduct",
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": 16238
+    "DESCRIPTION": "Disorderly Conduct"
   },
   {
     "ARREST NUMBER": 16238,
@@ -29749,9 +29749,9 @@
     "ARRESTED DATE TIME CHARGE": "02/18/11 21:45",
     "UMPD CASE NUMBER": "2011-00010810",
     "AGE": "",
-    "RACE": 16276,
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": "02/18/11 22:45"
+    "DESCRIPTION": 16276
   },
   {
     "ARREST NUMBER": 16276,
@@ -29902,9 +29902,9 @@
     "ARRESTED DATE TIME CHARGE": "02/23/11 02:14",
     "UMPD CASE NUMBER": "2011-00011855",
     "AGE": "",
-    "RACE": 16297,
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": "02/24/11 00:48"
+    "DESCRIPTION": 16297
   },
   {
     "ARREST NUMBER": 16297,
@@ -30514,9 +30514,9 @@
     "ARRESTED DATE TIME CHARGE": "03/16/11 21:05",
     "UMPD CASE NUMBER": "2011-00016158",
     "AGE": "",
-    "RACE": 16372,
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": "03/16/11 23:50"
+    "DESCRIPTION": 16372
   },
   {
     "ARREST NUMBER": 16372,
@@ -30577,9 +30577,9 @@
     "ARRESTED DATE TIME CHARGE": "03/17/11 22:32",
     "UMPD CASE NUMBER": "2011-00016346",
     "AGE": 20,
-    "RACE": "Disorderly Conduct",
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": 16378
+    "DESCRIPTION": "Disorderly Conduct"
   },
   {
     "ARREST NUMBER": 16378,
@@ -30595,9 +30595,9 @@
     "ARRESTED DATE TIME CHARGE": "03/17/11 23:04",
     "UMPD CASE NUMBER": "2011-00016346",
     "AGE": 21,
-    "RACE": "Disorderly Conduct",
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": 16382
+    "DESCRIPTION": "Disorderly Conduct"
   },
   {
     "ARREST NUMBER": 16382,
@@ -30892,9 +30892,9 @@
     "ARRESTED DATE TIME CHARGE": "03/31/11 01:31",
     "UMPD CASE NUMBER": "2011-00018786",
     "AGE": "",
-    "RACE": "Disorderly Conduct",
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": 16421
+    "DESCRIPTION": "Disorderly Conduct"
   },
   {
     "ARREST NUMBER": 16421,
@@ -31216,9 +31216,9 @@
     "ARRESTED DATE TIME CHARGE": "04/15/11 02:28",
     "UMPD CASE NUMBER": "2011-00021470",
     "AGE": 21,
-    "RACE": "Disorderly Conduct",
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": 16461
+    "DESCRIPTION": "Disorderly Conduct"
   },
   {
     "ARREST NUMBER": 16461,
@@ -31738,9 +31738,9 @@
     "ARRESTED DATE TIME CHARGE": "05/06/11 20:00",
     "UMPD CASE NUMBER": "2011-00025847",
     "AGE": "",
-    "RACE": 16539,
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": "05/07/11 02:05"
+    "DESCRIPTION": 16539
   },
   {
     "ARREST NUMBER": 16539,
@@ -32773,27 +32773,27 @@
     "ARRESTED DATE TIME CHARGE": "06/27/11 00:00",
     "UMPD CASE NUMBER": "2011-00030767",
     "AGE": "",
-    "RACE": 16691,
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": "06/27/11 00:00"
+    "DESCRIPTION": 16691
   },
   {
     "ARREST NUMBER": 16691,
     "ARRESTED DATE TIME CHARGE": "06/27/11 00:00",
     "UMPD CASE NUMBER": "2011-00030767",
     "AGE": "",
-    "RACE": 16695,
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": "06/27/11 00:00"
+    "DESCRIPTION": 16695
   },
   {
     "ARREST NUMBER": 16695,
     "ARRESTED DATE TIME CHARGE": "06/27/11 00:00",
     "UMPD CASE NUMBER": "2011-00030767",
     "AGE": "",
-    "RACE": 16666,
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": "06/27/11 21:20"
+    "DESCRIPTION": 16666
   },
   {
     "ARREST NUMBER": 16666,
@@ -32854,9 +32854,9 @@
     "ARRESTED DATE TIME CHARGE": "07/01/11 02:11",
     "UMPD CASE NUMBER": "2011-00037907",
     "AGE": "",
-    "RACE": "Disorderly Conduct",
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": 625
+    "DESCRIPTION": "Disorderly Conduct"
   },
   {
     "ARREST NUMBER": 16676,
@@ -35221,9 +35221,9 @@
     "ARRESTED DATE TIME CHARGE": "10/01/11 16:11",
     "UMPD CASE NUMBER": "2011-00056996",
     "AGE": 21,
-    "RACE": "Disorderly Conduct",
+    "RACE": "",
     "SEX": "",
-    "DESCRIPTION": 16987
+    "DESCRIPTION": "Disorderly Conduct"
   },
   {
     "ARREST NUMBER": 16987,
